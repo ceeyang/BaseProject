@@ -1,0 +1,11 @@
+framework module VisualEffectView {
+  umbrella header "VisualEffectView.h"
+
+  export *
+  module * { export * }
+}
+
+module VisualEffectView.Swift {
+    header "VisualEffectView-Swift.h"
+    requires objc
+}

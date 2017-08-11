@@ -1,0 +1,9 @@
+{
+  "commitish" : "2.0.7",
+  "iOS" : [
+    {
+      "hash" : "f43cb91d37fb466accc1c0c66abea9285066354827fb6abbced0b57dfcb01f01",
+      "name" : "VisualEffectView"
+    }
+  ]
+}

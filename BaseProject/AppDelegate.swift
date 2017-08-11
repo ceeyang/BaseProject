@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
         //设置根控制器
         buildKeyWindow()
         
@@ -33,21 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initHomeVC()
         window!.makeKeyAndVisible()
         
-        //let isNotFristOpen = UserDefaults.standard.bool(forKey: kIsNotFirstLaunch)
-        //if isNotFristOpen {
-        //    initHomeVC()
-        //} else {
-        //    window!.rootViewController   = GuideViewController()
-        //}
+//        let isNotFristOpen = UserDefaults.standard.bool(forKey: kIsNotFirstLaunch)
+//        if isNotFristOpen {
+//            initHomeVC()
+//        } else {
+//            window!.rootViewController   = GuideViewController()
+//        }
     }
     
     public func initHomeVC() {
         tabBarController = MainTabBarController()
-        window!.rootViewController = tabBarController
+        window!.rootViewController = LoginViewController()
     }
     
     func gloablPreferences() {
-        
+        UINavigationBar.appearance().barStyle = .blackOpaque
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

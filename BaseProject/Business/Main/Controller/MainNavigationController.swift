@@ -25,7 +25,7 @@ class MainNavigationController: UINavigationController,UINavigationControllerDel
 //        navigationBar.setBackgroundImage(image, for: .default)
         navigationBar.tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent
-        navigationBar.barTintColor = kNavigationBarColor
+        navigationBar.barTintColor = .kNavigationBarColor
         navigationBar.barStyle = .black;
         self.delegate = self
         

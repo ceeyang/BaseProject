@@ -20,7 +20,7 @@ class MainTabBarController: UITabBarController {
         let homePage = HomeViewController()
         addChildVC(childVC: homePage, title: "首页", image: "tab_icon_home", selectedImage: "tab_icon_home_selected")
         
-        let personalPage = HomeViewController()
+        let personalPage = PersonalViewController()
         addChildVC(childVC: personalPage, title: "我的", image: "tab_icon_home", selectedImage: "tab_icon_home_selected")
     }
     
@@ -31,7 +31,7 @@ class MainTabBarController: UITabBarController {
         childVC.tabBarItem.image = normalImg?.withRenderingMode(.alwaysOriginal)
         childVC.tabBarItem.selectedImage = selectedImg?.withRenderingMode(.alwaysOriginal)
         let textAttrs = [NSAttributedStringKey.foregroundColor : RGB(r: 51, g: 51, b: 51)]
-        let selectedTextAttrs = [NSAttributedStringKey.foregroundColor : kNavigationBarColor]
+        let selectedTextAttrs = [NSAttributedStringKey.foregroundColor : UIColor.kNavigationBarColor]
         childVC.tabBarItem.setTitleTextAttributes(textAttrs, for: .normal)
         childVC.tabBarItem.setTitleTextAttributes(selectedTextAttrs, for: .selected)
         let nav = MainNavigationController(rootViewController: childVC)

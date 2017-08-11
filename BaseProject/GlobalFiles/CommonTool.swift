@@ -25,8 +25,3 @@ func delay(_ delay:Double, closure:@escaping ()->()) {
         deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
 }
 
-func printLog<T>(_ message: T, file: String = #file, method: String = #function, line: Int = #line) {
-    let range = file.range(of: "PillarsCollege")
-    let path  = file.substring(from: (range?.lowerBound)!)
-    print("\(path)[\(line)], \(method): \(message)")
-}

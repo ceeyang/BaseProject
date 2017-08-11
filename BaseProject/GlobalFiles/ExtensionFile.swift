@@ -11,6 +11,7 @@ import Foundation
 import ObjectiveC
 import SwiftyJSON
 import EZSwiftExtensions
+import VisualEffectView
 
 //MARK: - String
 extension String {
@@ -120,39 +121,17 @@ extension Collection {
     }
 }
 
-extension UIImage {
-    
-    func kt_drawRectWithRoundedCorner(radius: CGFloat, _ sizetoFit: CGSize) -> UIImage {
-        let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: sizetoFit)
-        UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
-        UIGraphicsGetCurrentContext()!.addPath(UIBezierPath(roundedRect: rect, byRoundingCorners: UIRectCorner.allCorners,
-                                                            cornerRadii: CGSize(width: radius, height: radius)).cgPath)
-        UIGraphicsGetCurrentContext()?.clip()
-        
-        self.draw(in: rect)
-        UIGraphicsGetCurrentContext()?.drawPath(using: .fillStroke)
-        let output = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        
-        return output!
-    }
-}
 
 extension UIImageView {
-    /**
-     / !!!只有当 imageView 不为nil 时，调用此方法才有效果
-     :param: radius 圆角半径
-     */
-    func kt_addCorner(radius: CGFloat) {
-        self.image = self.image?.kt_drawRectWithRoundedCorner(radius: radius, self.bounds.size)
+    func blurRadius(radiu:Float) {
+        let visualEffectView = VisualEffectView(frame: frame)
+        visualEffectView.colorTint = .white
+        visualEffectView.colorTintAlpha = 0.2
+        visualEffectView.blurRadius = CGFloat(radiu)
+        visualEffectView.scale = 1
+        addSubview(visualEffectView)
     }
 }
-
-
-
-
-
-
 
 
 

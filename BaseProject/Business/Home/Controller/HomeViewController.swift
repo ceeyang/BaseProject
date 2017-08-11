@@ -18,6 +18,23 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let multilineString = """
+            This is a multi-line string.
+        You don't have to escape "quotes" in here.
+        String interpolation works as expected: 2 + 3 = \(2 + 3)
+        The position of the closing delimiter
+        controls whitespace stripping.
+        """
+        print(multilineString)
+        
+        let centerLabel = UILabel()
+        view.addSubview(centerLabel)
+        centerLabel.numberOfLines = 0;
+        centerLabel.text = multilineString
+        centerLabel.snp.makeConstraints { (make) in
+            make.center.equalTo(view)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

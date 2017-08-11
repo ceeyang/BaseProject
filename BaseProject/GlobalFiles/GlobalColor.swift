@@ -8,13 +8,32 @@
 
 import UIKit
 
-let kAppBaseColor = RGB(r: 243, g: 243, b: 243)
-let kTitleColor = RGB(r: 26, g: 26, b: 26)
-
-let kNavigationBarColor = RGB(r: 241, g: 139, b: 52)
-
-let PublicTitleColor = RGB(r: 51, g: 51, b: 51)
-let PublicContentColor = RGB(r: 136, g: 136, b: 136)
-
-let kCommon_LineColor = RGB(r: 196, g: 197, b: 198)
-
+extension UIColor {
+    /* 导航栏颜色 */
+    public class var kNavigationBarColor: UIColor {
+        get {
+            return RGB(r: 87, g: 201, b: 202)
+        }
+    }
+    
+    /* 标题颜色 */
+    public class var kTitleColor: UIColor {
+        get {
+            return RGB(r: 51, g: 51, b: 51)
+        }
+    }
+    
+    /* 副标题颜色 */
+    public class var kContentColor: UIColor {
+        get {
+            return RGB(r: 136, g: 136, b: 136)
+        }
+    }
+    
+    /* 公共背景色 */
+    public class var kAppBaseColor: UIColor {
+        get {
+            return RGB(r: 243, g: 243, b: 243)
+        }
+    }
+}
