@@ -1,0 +1,8 @@
+github "Alamofire/Alamofire"
+github "SwiftyJSON/SwiftyJSON"
+github "SnapKit/SnapKit"
+github "onevcat/Kingfisher"
+github "tristanhimmelman/AlamofireObjectMapper"
+github "goktugyil/EZSwiftExtensions"
+github "seedotlee/MJRefresh" "new-version"
+github "dani-gavrilov/GDPerformanceView-Swift"

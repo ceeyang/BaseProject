@@ -1,0 +1,4 @@
+framework module GDPerformanceView {
+    header "GDPerformanceView-Swift.h"
+    requires objc
+}
