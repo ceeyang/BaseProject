@@ -12,11 +12,42 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    static let shared = AppDelegate()
+    var tabBarController = MainTabBarController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        //设置根控制器
+        buildKeyWindow()
+        
+        //全局设置
+        gloablPreferences()
         return true
+    }
+    
+    public func buildKeyWindow() {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        initHomeVC()
+        window!.makeKeyAndVisible()
+        
+        //let isNotFristOpen = UserDefaults.standard.bool(forKey: kIsNotFirstLaunch)
+        //if isNotFristOpen {
+        //    initHomeVC()
+        //} else {
+        //    window!.rootViewController   = GuideViewController()
+        //}
+    }
+    
+    public func initHomeVC() {
+        tabBarController = MainTabBarController()
+        window!.rootViewController = tabBarController
+    }
+    
+    func gloablPreferences() {
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
