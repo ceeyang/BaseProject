@@ -39,6 +39,10 @@
 		D61E147D1F3D56DA00CD2D03 /* CommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E14771F3D56DA00CD2D03 /* CommonTool.swift */; };
 		D61E148A1F3D57EF00CD2D03 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E14891F3D57EF00CD2D03 /* MainTabBarController.swift */; };
 		D61E148C1F3D582700CD2D03 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E148B1F3D582700CD2D03 /* MainNavigationController.swift */; };
+		D63632B81F3ED8E300BC1478 /* BannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63632B71F3ED8E300BC1478 /* BannerModel.swift */; };
+		D63632BD1F3EE50700BC1478 /* FSPagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63632BC1F3EE50700BC1478 /* FSPagerView.framework */; };
+		D63632BE1F3EE50700BC1478 /* FSPagerView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63632BC1F3EE50700BC1478 /* FSPagerView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63632C81F3EEA0A00BC1478 /* ScanQRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63632C71F3EEA0A00BC1478 /* ScanQRCodeController.swift */; };
 		D657BCF31F3D881700F49FFC /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657BCF21F3D881700F49FFC /* PersonalViewController.swift */; };
 		D669428C1F3D59FB002E1699 /* Resource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D669428B1F3D59FB002E1699 /* Resource.xcassets */; };
 		D669428E1F3D5A23002E1699 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669428D1F3D5A23002E1699 /* HomeViewController.swift */; };
@@ -63,6 +67,7 @@
 			files = (
 				D61E146C1F3D54CE00CD2D03 /* ObjectMapper.framework in Embed Frameworks */,
 				D61E14681F3D54CE00CD2D03 /* MJRefresh.framework in Embed Frameworks */,
+				D63632BE1F3EE50700BC1478 /* FSPagerView.framework in Embed Frameworks */,
 				D6C337F31F3DE88D008210B4 /* VisualEffectView.framework in Embed Frameworks */,
 				D61E14601F3D54CE00CD2D03 /* GDPerformanceView.framework in Embed Frameworks */,
 				D61E146A1F3D54CE00CD2D03 /* Kingfisher.framework in Embed Frameworks */,
@@ -104,6 +109,9 @@
 		D61E14771F3D56DA00CD2D03 /* CommonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTool.swift; sourceTree = "<group>"; };
 		D61E14891F3D57EF00CD2D03 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		D61E148B1F3D582700CD2D03 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		D63632B71F3ED8E300BC1478 /* BannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModel.swift; sourceTree = "<group>"; };
+		D63632BC1F3EE50700BC1478 /* FSPagerView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSPagerView.framework; path = Carthage/Build/iOS/FSPagerView.framework; sourceTree = "<group>"; };
+		D63632C71F3EEA0A00BC1478 /* ScanQRCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRCodeController.swift; sourceTree = "<group>"; };
 		D657BCF21F3D881700F49FFC /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		D669428B1F3D59FB002E1699 /* Resource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resource.xcassets; sourceTree = "<group>"; };
 		D669428D1F3D5A23002E1699 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 				D61E14611F3D54CE00CD2D03 /* AlamofireObjectMapper.framework in Frameworks */,
 				D6C337F21F3DE88D008210B4 /* VisualEffectView.framework in Frameworks */,
 				D61E145F1F3D54CE00CD2D03 /* GDPerformanceView.framework in Frameworks */,
+				D63632BD1F3EE50700BC1478 /* FSPagerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +181,7 @@
 		D61E144F1F3D542D00CD2D03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D63632BC1F3EE50700BC1478 /* FSPagerView.framework */,
 				D6FFC6E21F3E1B0900F912B6 /* PKHUD.framework */,
 				D6C337F41F3DEC72008210B4 /* MobileCoreServices.framework */,
 				D6C337F11F3DE88C008210B4 /* VisualEffectView.framework */,
@@ -268,6 +278,7 @@
 		D61E14831F3D579400CD2D03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D63632B71F3ED8E300BC1478 /* BannerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				D669428D1F3D5A23002E1699 /* HomeViewController.swift */,
+				D63632C71F3EEA0A00BC1478 /* ScanQRCodeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -453,6 +465,8 @@
 				D6FFC6DC1F3DF17C00F912B6 /* LoginInputView.swift in Sources */,
 				D6FFC6DF1F3DFB6F00F912B6 /* KeyboardAvoiding.swift in Sources */,
 				D61E147B1F3D56DA00CD2D03 /* RequestPath.swift in Sources */,
+				D63632B81F3ED8E300BC1478 /* BannerModel.swift in Sources */,
+				D63632C81F3EEA0A00BC1478 /* ScanQRCodeController.swift in Sources */,
 				D61E148A1F3D57EF00CD2D03 /* MainTabBarController.swift in Sources */,
 				D61E147D1F3D56DA00CD2D03 /* CommonTool.swift in Sources */,
 				D61E147A1F3D56DA00CD2D03 /* RequestManager.swift in Sources */,

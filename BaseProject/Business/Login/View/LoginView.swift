@@ -8,19 +8,27 @@
 
 import UIKit
 import VisualEffectView
+import Kingfisher
 
 class LoginView: UIView {
 
     //懒加载初始化控件
     lazy var mBackgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named:"BackgroundImage_About")
+        imageView.image = UIImage(named:"backgroundImage_About")
         imageView.isUserInteractionEnabled = true
         return imageView
     }()
     
+    public lazy var mCloseButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named:"login_close"), for: .normal)
+        return button
+    }()
+    
     public lazy var mAvatorImageView: UIImageView = {
         let avator = UIImageView()
+        avator.kf.setImage(with: URL(string:"https://b-ssl.duitang.com/uploads/item/201609/04/20160904144136_zySJ3.thumb.700_0.jpeg"))
         avator.backgroundColor = .white
         avator.layer.masksToBounds = true
         avator.layer.cornerRadius = 60
@@ -37,7 +45,9 @@ class LoginView: UIView {
         textField.layer.masksToBounds = true
         textField.layer.cornerRadius = 5
         textField.backgroundColor = .kAppBaseColor
+        textField.alpha = 0.8
         textField.mTextField.returnKeyType = .next
+        textField.mImageView.image = UIImage(named:"login_account")
         textField.mNameLabel.text = """
         工号/账号:
         """
@@ -49,6 +59,8 @@ class LoginView: UIView {
         textField.backgroundColor = .kAppBaseColor
         textField.layer.masksToBounds = true
         textField.layer.cornerRadius = 5
+        textField.alpha = 0.8
+        textField.mImageView.image = UIImage(named:"login_passcode")
         textField.mTextField.isSecureTextEntry = true
         textField.mTextField.returnKeyType = .done
         textField.mNameLabel.text = """
@@ -64,6 +76,7 @@ class LoginView: UIView {
         loginBtn.setBackgroundColor(.kNavigationBarColor, forState: .normal)
         loginBtn.layer.masksToBounds = true
         loginBtn.layer.cornerRadius = 5
+        loginBtn.alpha = 0.8
         return loginBtn
     }()
     
@@ -95,11 +108,18 @@ class LoginView: UIView {
         let visualEffectView = VisualEffectView(frame: frame)
         visualEffectView.colorTint = .white
         visualEffectView.colorTintAlpha = 0.2
-        visualEffectView.blurRadius = 1
+        visualEffectView.blurRadius = 5
         visualEffectView.scale = 1
         mBackgroundImageView.addSubview(visualEffectView)
         mBackgroundImageView.snp.makeConstraints { (make) in
             make.edges.equalTo(self)
+        }
+        
+        mBackgroundImageView.addSubview(mCloseButton)
+        mCloseButton.snp.makeConstraints { (make) in
+            make.left.equalTo(mBackgroundImageView.snp.left).offset(15)
+            make.top.equalTo(mBackgroundImageView.snp.top).offset(30)
+            make.size.equalTo(CGSize(width: 40, height: 40))
         }
         
         /* Avator ImageView */

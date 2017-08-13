@@ -2,7 +2,7 @@
   "commitish" : "1.11",
   "iOS" : [
     {
-      "hash" : "bc908a2dd1e074a70f00f8822a25bf281d61de0e81f6deb6a98079bcdcc584d8",
+      "hash" : "e2336b2d8346c4fd170fd0cf68acf4e652843b61a4d1710b5c0ce405b99fc802",
       "name" : "EZSwiftExtensions"
     }
   ]

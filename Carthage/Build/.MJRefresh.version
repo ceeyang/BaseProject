@@ -2,7 +2,7 @@
   "commitish" : "2f7b8ce8a977218e1e93a5a746dbcc4dc6370ce1",
   "iOS" : [
     {
-      "hash" : "d29bdff4b4a4a503cdcd63c81e29289ee8462cd96e5b476360a768ad07babd8c",
+      "hash" : "1de84b472014952d137d12e780bc57bf39f2e2f3a90709b2c31a69f67c1e96df",
       "name" : "MJRefresh"
     }
   ]

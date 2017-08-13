@@ -38,7 +38,7 @@ class LoginInputView: UIView {
         mImageView.snp.makeConstraints { (make) in
             make.centerY.equalTo(self)
             make.left.equalTo(self.snp.left).offset(10)
-            make.size.equalTo(CGSize(width: 30, height: 30))
+            make.size.equalTo(CGSize(width: 25, height: 25))
         }
         
         addSubview(mNameLabel)

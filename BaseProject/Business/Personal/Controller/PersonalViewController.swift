@@ -21,11 +21,13 @@ class PersonalViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = UIColor.random()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .white
+        navigationBarTitle(titleString: "深圳市源泰达医院")
         
         struct Person {
             var name: String
@@ -63,3 +65,4 @@ class PersonalViewController: UIViewController {
     */
 
 }
+

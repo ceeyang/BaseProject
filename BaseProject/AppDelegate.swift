@@ -32,17 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initHomeVC()
         window!.makeKeyAndVisible()
         
-//        let isNotFristOpen = UserDefaults.standard.bool(forKey: kIsNotFirstLaunch)
-//        if isNotFristOpen {
-//            initHomeVC()
-//        } else {
-//            window!.rootViewController   = GuideViewController()
-//        }
+        let isNotFristOpen = UserDefaults.standard.bool(forKey: kIsNotFirstLaunch)
+        if isNotFristOpen {
+            initHomeVC()
+        } else {
+            window!.rootViewController   = LoginViewController()
+        }
     }
     
     public func initHomeVC() {
         tabBarController = MainTabBarController()
-        window!.rootViewController = LoginViewController()
+        window!.rootViewController = tabBarController
     }
     
     func gloablPreferences() {
@@ -70,7 +70,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

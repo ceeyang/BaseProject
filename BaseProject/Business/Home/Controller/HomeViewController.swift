@@ -12,28 +12,15 @@ class HomeViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = UIColor.random()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let multilineString = """
-            This is a multi-line string.
-        You don't have to escape "quotes" in here.
-        String interpolation works as expected: 2 + 3 = \(2 + 3)
-        The position of the closing delimiter
-        controls whitespace stripping.
-        """
-        print(multilineString)
+        view.backgroundColor = .white
+        navigationBarTitle(titleString: "深圳市源泰达医院")
         
-        let centerLabel = UILabel()
-        view.addSubview(centerLabel)
-        centerLabel.numberOfLines = 0;
-        centerLabel.text = multilineString
-        centerLabel.snp.makeConstraints { (make) in
-            make.center.equalTo(view)
-        }
         
     }
 

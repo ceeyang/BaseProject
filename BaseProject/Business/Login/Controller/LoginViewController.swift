@@ -30,6 +30,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         mLoginView.mAccountTextField.mTextField.delegate = self
         mLoginView.mPasscodeTextField.mTextField.delegate = self
         mLoginView.mLoginButton.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
+        mLoginView.mCloseButton.addTarget(self, action: #selector(closeButtonAction), for: .touchUpInside)
         view.addSubview(mLoginView)
         KeyboardAvoiding.avoidingView = mLoginView.mInputView
     }
@@ -54,6 +55,15 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
 
+    @objc func closeButtonAction() {
+        guard UserDefaults.standard.bool(forKey: kIsNotFirstLaunch) else {
+            UserDefaults.standard.set(true, forKey: kIsNotFirstLaunch)
+            AppDelegate.shared.buildKeyWindow()
+            return
+        }
+        dismissVC(completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

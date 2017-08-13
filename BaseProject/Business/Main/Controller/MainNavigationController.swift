@@ -92,3 +92,29 @@ extension MainNavigationController {
     }
 }
 
+extension UIViewController {
+    
+    func navigationBarTitle(titleString:String) {
+        let titleLabel = UILabel()
+        titleLabel.textColor = .white
+        titleLabel.text = titleString
+        navigationItem.titleView = titleLabel
+        
+        let logoImage = UIImage(named:"app_logo")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: logoImage, style: .plain, target: self, action: #selector(logoButtonAction))
+        
+        let scanImage = UIImage(named:"navigationbar_scan")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: scanImage, style: .plain, target: self, action: #selector(scanButtonAction))
+    }
+    
+    @objc func logoButtonAction() {
+        presentVC(LoginViewController())
+    }
+    
+    @objc func scanButtonAction() {
+        pushVC(ScanQRCodeController())
+    }
+
+}
+
+
