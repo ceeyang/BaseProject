@@ -86,13 +86,11 @@ class BannerView: UIView,FSPagerViewDelegate,FSPagerViewDataSource {
         }
         let index = pagerView.scrollOffset
         let width = kScreenWidth / CGFloat(mDataArr.count)
-//        UIView.animate(withDuration: 0.5) {
-            self.mLineView.snp.remakeConstraints({ (make) in
-                make.width.equalTo(width)
-                make.left.equalTo(self.mLineBackgroundView.snp.left).offset(index * width)
-                make.top.bottom.equalTo(self.mLineBackgroundView)
-            })
-//        }
+        mLineView.snp.remakeConstraints({ (make) in
+            make.width.equalTo(width)
+            make.left.equalTo(self.mLineBackgroundView.snp.left).offset(index * width)
+            make.top.bottom.equalTo(self.mLineBackgroundView)
+        })
     }
     
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {

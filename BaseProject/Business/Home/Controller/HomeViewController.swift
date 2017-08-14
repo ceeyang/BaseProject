@@ -25,14 +25,14 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func setupTableView() {
-        mBannerView = BannerView(frame: CGRect(x: 0, y: 0, w: kScreenWidth, h: 200))
+        mBannerView = BannerView(frame: CGRect(x: 0, y: 0, w: kScreenWidth, h: 180))
         mTableView = UITableView(frame: view.frame, style: .plain)
         mTableView.backgroundColor = UIColor.white
         mTableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "cell")
         mTableView.delegate = self
         mTableView.dataSource = self
         mTableView.showsVerticalScrollIndicator = false
-        mTableView.rowHeight = 120
+        mTableView.rowHeight = 100
         mTableView.tableHeaderView = mBannerView
         mTableView.tableFooterView = UIView()
         view.addSubview(mTableView)
