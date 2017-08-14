@@ -36,4 +36,11 @@ extension UIColor {
             return RGB(r: 243, g: 243, b: 243)
         }
     }
+    
+    /* banner 下面指示器颜色 */
+    public class var kBannerLineColor: UIColor {
+        get {
+            return RGB(r: 235, g: 165, b: 58)
+        }
+    }
 }
