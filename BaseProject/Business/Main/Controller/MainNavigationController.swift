@@ -21,8 +21,8 @@ class MainNavigationController: UINavigationController,UINavigationControllerDel
     }
     
     func setNavigationBarStyle() {
-//        let image     = UIImage(named: "common_actionbar_bg")
-//        navigationBar.setBackgroundImage(image, for: .default)
+        //let image     = UIImage(named: "common_actionbar_bg")
+        //navigationBar.setBackgroundImage(image, for: .default)
         navigationBar.tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent
         navigationBar.barTintColor = .kNavigationBarColor
@@ -94,7 +94,7 @@ extension MainNavigationController {
 
 extension UIViewController {
     
-    func navigationBarTitle(titleString:String) {
+    func sethHomeNavigationBarTitle(titleString:String) {
         let titleLabel = UILabel()
         titleLabel.textColor = .white
         titleLabel.text = titleString
@@ -107,6 +107,21 @@ extension UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: scanImage, style: .plain, target: self, action: #selector(scanButtonAction))
     }
     
+    func sethNavigationBarTitle(titleString:String, withSearchBar:Bool) {
+        let titleLabel = UILabel()
+        titleLabel.textColor = .white
+        titleLabel.text = titleString
+        navigationItem.titleView = titleLabel
+        
+        let searchBarItem = UIBarButtonItem(image: UIImage(named:"navigationbar_scan"), style: .plain, target: self, action: #selector(searchButtonAction))
+        let scanBarItem = UIBarButtonItem(image: UIImage(named:"navigationbar_scan"), style: .plain, target: self, action: #selector(scanButtonAction))
+        if withSearchBar {
+            navigationItem.rightBarButtonItems = [scanBarItem,searchBarItem]
+        } else {
+            navigationItem.rightBarButtonItem = scanBarItem
+        }
+    }
+    
     @objc func logoButtonAction() {
         presentVC(LoginViewController())
     }
@@ -115,6 +130,9 @@ extension UIViewController {
         pushVC(ScanQRCodeController())
     }
 
+    @objc func searchButtonAction() {
+        print("search btn click")
+    }
 }
 
 

@@ -19,7 +19,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationBarTitle(titleString: "深圳市源泰达医院")
+        sethHomeNavigationBarTitle(titleString: "深圳市源泰达医院")
         setupTableView()
         addRefresh()
     }

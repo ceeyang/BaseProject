@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.8",
+  "iOS" : [
+    {
+      "hash" : "68d0f9994d380a99e91db9b4bd88b8e78ca56c914e9a5fc4145d8fd4a7274660",
+      "name" : "BetterSegmentedControl"
+    }
+  ]
+}

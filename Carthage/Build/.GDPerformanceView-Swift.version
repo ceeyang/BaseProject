@@ -2,7 +2,7 @@
   "commitish" : "1.2.0",
   "iOS" : [
     {
-      "hash" : "3da4f46f9f1ba40dd21bf2e2fcecc45e9e117eb183dd5f41576f405c19694694",
+      "hash" : "a9ca44b708c47cf111a3498971065840ad933060d74bae881f2dcc209ff4ad90",
       "name" : "GDPerformanceView"
     }
   ]

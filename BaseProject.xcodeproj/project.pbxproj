@@ -52,6 +52,11 @@
 		D6C337F21F3DE88D008210B4 /* VisualEffectView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C337F11F3DE88C008210B4 /* VisualEffectView.framework */; };
 		D6C337F31F3DE88D008210B4 /* VisualEffectView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6C337F11F3DE88C008210B4 /* VisualEffectView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6C337F51F3DEC72008210B4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C337F41F3DEC72008210B4 /* MobileCoreServices.framework */; };
+		D6C47DFF1F42966C005817E9 /* BetterSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C47DFE1F42966C005817E9 /* BetterSegmentedControl.framework */; };
+		D6C47E001F42966C005817E9 /* BetterSegmentedControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6C47DFE1F42966C005817E9 /* BetterSegmentedControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6C47E021F42CF02005817E9 /* HadTakedStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */; };
+		D6C47E041F42CF1E005817E9 /* NewTakeStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */; };
+		D6C47E061F42D793005817E9 /* TakeStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */; };
 		D6D667BB1F412CB5005E229B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D667BA1F412CB5005E229B /* HomeTableViewCell.swift */; };
 		D6FBEB411F4159AA00EF9A06 /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBEB401F4159AA00EF9A06 /* PersonHeaderView.swift */; };
 		D6FBEB431F41D26F00EF9A06 /* PersonalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBEB421F41D26F00EF9A06 /* PersonalModel.swift */; };
@@ -81,6 +86,7 @@
 				D61E145E1F3D54CE00CD2D03 /* EZSwiftExtensions.framework in Embed Frameworks */,
 				D61E14621F3D54CE00CD2D03 /* AlamofireObjectMapper.framework in Embed Frameworks */,
 				D6FFC6E41F3E1B0900F912B6 /* PKHUD.framework in Embed Frameworks */,
+				D6C47E001F42966C005817E9 /* BetterSegmentedControl.framework in Embed Frameworks */,
 				D61E14641F3D54CE00CD2D03 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -125,6 +131,10 @@
 		D6C337EB1F3DA6E3008210B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D6C337F11F3DE88C008210B4 /* VisualEffectView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualEffectView.framework; path = Carthage/Build/iOS/VisualEffectView.framework; sourceTree = "<group>"; };
 		D6C337F41F3DEC72008210B4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D6C47DFE1F42966C005817E9 /* BetterSegmentedControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BetterSegmentedControl.framework; path = Carthage/Build/iOS/BetterSegmentedControl.framework; sourceTree = "<group>"; };
+		D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadTakedStockViewController.swift; sourceTree = "<group>"; };
+		D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTakeStockViewController.swift; sourceTree = "<group>"; };
+		D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeStockTableViewCell.swift; sourceTree = "<group>"; };
 		D6D667BA1F412CB5005E229B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D6FBEB401F4159AA00EF9A06 /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
 		D6FBEB421F41D26F00EF9A06 /* PersonalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalModel.swift; sourceTree = "<group>"; };
@@ -141,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C337F51F3DEC72008210B4 /* MobileCoreServices.framework in Frameworks */,
+				D6C47DFF1F42966C005817E9 /* BetterSegmentedControl.framework in Frameworks */,
 				D61E145D1F3D54CE00CD2D03 /* EZSwiftExtensions.framework in Frameworks */,
 				D61E145B1F3D54CE00CD2D03 /* SwiftyJSON.framework in Frameworks */,
 				D61E146B1F3D54CE00CD2D03 /* ObjectMapper.framework in Frameworks */,
@@ -191,6 +202,7 @@
 		D61E144F1F3D542D00CD2D03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6C47DFE1F42966C005817E9 /* BetterSegmentedControl.framework */,
 				D63632BC1F3EE50700BC1478 /* FSPagerView.framework */,
 				D6FFC6E21F3E1B0900F912B6 /* PKHUD.framework */,
 				D6C337F41F3DEC72008210B4 /* MobileCoreServices.framework */,
@@ -413,6 +425,7 @@
 		D6FBEB4A1F41E9B400EF9A06 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				D6FBEB4C1F41E9CD00EF9A06 /* TakeStockViewController.swift */,
+				D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */,
+				D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -512,6 +527,7 @@
 				D61E148C1F3D582700CD2D03 /* MainNavigationController.swift in Sources */,
 				D61E147C1F3D56DA00CD2D03 /* ConstString.swift in Sources */,
 				D6FFC6DC1F3DF17C00F912B6 /* LoginInputView.swift in Sources */,
+				D6C47E021F42CF02005817E9 /* HadTakedStockViewController.swift in Sources */,
 				D6FFC6DF1F3DFB6F00F912B6 /* KeyboardAvoiding.swift in Sources */,
 				D61E147B1F3D56DA00CD2D03 /* RequestPath.swift in Sources */,
 				D63632B81F3ED8E300BC1478 /* BannerModel.swift in Sources */,
@@ -524,9 +540,11 @@
 				D669428E1F3D5A23002E1699 /* HomeViewController.swift in Sources */,
 				D6FFC6E11F3DFB7B00F912B6 /* KeyboardDismissingView.swift in Sources */,
 				D6FBEB4D1F41E9CD00EF9A06 /* TakeStockViewController.swift in Sources */,
+				D6C47E041F42CF1E005817E9 /* NewTakeStockViewController.swift in Sources */,
 				D6C337EC1F3DA6E3008210B4 /* LoginView.swift in Sources */,
 				D6FBEB411F4159AA00EF9A06 /* PersonHeaderView.swift in Sources */,
 				D61E14781F3D56DA00CD2D03 /* GlobalColor.swift in Sources */,
+				D6C47E061F42D793005817E9 /* TakeStockTableViewCell.swift in Sources */,
 				D61E143E1F3D4D0F00CD2D03 /* AppDelegate.swift in Sources */,
 				D657BCF31F3D881700F49FFC /* PersonalViewController.swift in Sources */,
 				D6C337EA1F3DA6A7008210B4 /* LoginViewController.swift in Sources */,

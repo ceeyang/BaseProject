@@ -40,7 +40,7 @@ class PersonalViewController: UIViewController,UITableViewDelegate,UITableViewDa
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        navigationBarTitle(titleString: "深圳市源泰达医院")
+        sethHomeNavigationBarTitle(titleString: "深圳市源泰达医院")
         
         view.addSubview(mTableView)
         
