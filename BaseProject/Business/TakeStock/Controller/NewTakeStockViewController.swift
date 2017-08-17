@@ -30,6 +30,7 @@ class NewTakeStockViewController: UIViewController,UITableViewDelegate,UITableVi
         mTableView.dataSource = self
         mTableView.showsVerticalScrollIndicator = false
         mTableView.rowHeight = 130
+        mTableView.separatorInset = UIEdgeInsetsMake(0, -10, 0, 0)
         mTableView.tableFooterView = UIView()
         view.addSubview(mTableView)
         mTableView.snp.makeConstraints { (make) in
@@ -64,5 +65,8 @@ extension NewTakeStockViewController {
         cell.selectionStyle = .none
         cell.configCellWith(nil)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(TakeStockDetailViewController(), animated: true)
     }
 }

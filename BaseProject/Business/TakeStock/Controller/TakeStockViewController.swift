@@ -16,9 +16,9 @@ class TakeStockViewController: UIViewController,UIScrollViewDelegate {
             frame: CGRect(x: 0, y: 64, width: kScreenWidth, height: 44),
             titles: ["已有盘点(0)", "新增盘点"],
             index: 0,
-            backgroundColor: .white,
+            backgroundColor: .kAppBaseColor,
             titleColor: .kTitleColor,
-            indicatorViewBackgroundColor: .white,
+            indicatorViewBackgroundColor: .kAppBaseColor,
             selectedTitleColor: .kNavigationBarColor)
         indicatorControl.autoresizingMask = [.flexibleWidth]
         indicatorControl.bouncesOnChange = false

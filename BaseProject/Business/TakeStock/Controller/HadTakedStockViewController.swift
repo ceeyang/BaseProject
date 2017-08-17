@@ -32,6 +32,7 @@ class HadTakedStockViewController: UIViewController,UITableViewDelegate,UITableV
         mTableView.showsVerticalScrollIndicator = false
         mTableView.rowHeight = 130
         mTableView.tableFooterView = UIView()
+        mTableView.separatorInset = UIEdgeInsetsMake(0, -10, 0, 0)
         view.addSubview(mTableView)
         mTableView.snp.makeConstraints { (make) in
             make.left.bottom.top.right.equalTo(view)
@@ -65,6 +66,9 @@ extension HadTakedStockViewController {
         cell.selectionStyle = .none
         cell.configCellWith(nil)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(TakeStockDetailViewController(), animated: true)
     }
 }
 
