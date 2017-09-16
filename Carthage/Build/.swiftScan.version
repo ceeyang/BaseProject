@@ -1,0 +1,9 @@
+{
+  "commitish" : "5cc58ca34edcf9e4f1e6e269dc2bf595841b4168",
+  "iOS" : [
+    {
+      "hash" : "9ea588ee94135ba94a73c64cc688c0e72097dfd46c4240c620970b3813fd29e6",
+      "name" : "SwiftScanner"
+    }
+  ]
+}

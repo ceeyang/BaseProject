@@ -61,6 +61,8 @@
 		D6C47E021F42CF02005817E9 /* HadTakedStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */; };
 		D6C47E041F42CF1E005817E9 /* NewTakeStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */; };
 		D6C47E061F42D793005817E9 /* TakeStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */; };
+		D6CE108B1F6D6077004815FB /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CE108A1F6D6077004815FB /* SwiftScanner.framework */; };
+		D6CE108C1F6D6077004815FB /* SwiftScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6CE108A1F6D6077004815FB /* SwiftScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6D667BB1F412CB5005E229B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D667BA1F412CB5005E229B /* HomeTableViewCell.swift */; };
 		D6FBEB411F4159AA00EF9A06 /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBEB401F4159AA00EF9A06 /* PersonHeaderView.swift */; };
 		D6FBEB431F41D26F00EF9A06 /* PersonalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBEB421F41D26F00EF9A06 /* PersonalModel.swift */; };
@@ -92,6 +94,7 @@
 				D6FFC6E41F3E1B0900F912B6 /* PKHUD.framework in Embed Frameworks */,
 				D6C47E001F42966C005817E9 /* BetterSegmentedControl.framework in Embed Frameworks */,
 				D61E14641F3D54CE00CD2D03 /* SnapKit.framework in Embed Frameworks */,
+				D6CE108C1F6D6077004815FB /* SwiftScanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +146,7 @@
 		D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadTakedStockViewController.swift; sourceTree = "<group>"; };
 		D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTakeStockViewController.swift; sourceTree = "<group>"; };
 		D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeStockTableViewCell.swift; sourceTree = "<group>"; };
+		D6CE108A1F6D6077004815FB /* SwiftScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftScanner.framework; path = Carthage/Build/iOS/SwiftScanner.framework; sourceTree = "<group>"; };
 		D6D667BA1F412CB5005E229B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D6FBEB401F4159AA00EF9A06 /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
 		D6FBEB421F41D26F00EF9A06 /* PersonalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalModel.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				D61E14511F3D542E00CD2D03 /* ARKit.framework in Frameworks */,
 				D61E14631F3D54CE00CD2D03 /* SnapKit.framework in Frameworks */,
 				D61E14691F3D54CE00CD2D03 /* Kingfisher.framework in Frameworks */,
+				D6CE108B1F6D6077004815FB /* SwiftScanner.framework in Frameworks */,
 				D61E14651F3D54CE00CD2D03 /* Alamofire.framework in Frameworks */,
 				D61E14671F3D54CE00CD2D03 /* MJRefresh.framework in Frameworks */,
 				D61E14611F3D54CE00CD2D03 /* AlamofireObjectMapper.framework in Frameworks */,
@@ -210,6 +215,7 @@
 		D61E144F1F3D542D00CD2D03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6CE108A1F6D6077004815FB /* SwiftScanner.framework */,
 				D6C47DFE1F42966C005817E9 /* BetterSegmentedControl.framework */,
 				D63632BC1F3EE50700BC1478 /* FSPagerView.framework */,
 				D6FFC6E21F3E1B0900F912B6 /* PKHUD.framework */,
