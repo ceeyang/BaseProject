@@ -49,6 +49,7 @@
 		D6607B961F4449CC001F88D8 /* TakeStockDetailTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6607B951F4449CC001F88D8 /* TakeStockDetailTableSectionView.swift */; };
 		D669428C1F3D59FB002E1699 /* Resource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D669428B1F3D59FB002E1699 /* Resource.xcassets */; };
 		D669428E1F3D5A23002E1699 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669428D1F3D5A23002E1699 /* HomeViewController.swift */; };
+		D68220E91F5E50CA006B918F /* EditingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68220E81F5E50CA006B918F /* EditingTableViewController.swift */; };
 		D68E76C01F3FF41D00358AE9 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68E76BF1F3FF41D00358AE9 /* BannerView.swift */; };
 		D6C337EA1F3DA6A7008210B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C337E91F3DA6A7008210B4 /* LoginViewController.swift */; };
 		D6C337EC1F3DA6E3008210B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C337EB1F3DA6E3008210B4 /* LoginView.swift */; };
@@ -132,6 +133,7 @@
 		D6607B951F4449CC001F88D8 /* TakeStockDetailTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeStockDetailTableSectionView.swift; sourceTree = "<group>"; };
 		D669428B1F3D59FB002E1699 /* Resource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resource.xcassets; sourceTree = "<group>"; };
 		D669428D1F3D5A23002E1699 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D68220E81F5E50CA006B918F /* EditingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTableViewController.swift; sourceTree = "<group>"; };
 		D68E76BF1F3FF41D00358AE9 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		D6C337E91F3DA6A7008210B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6C337EB1F3DA6E3008210B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 		D61E146F1F3D561A00CD2D03 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				D68220E41F5E5080006B918F /* TestFiles */,
 				D6FBEB481F41E99A00EF9A06 /* TakeStock */,
 				D6C337E51F3DA684008210B4 /* Login */,
 				D61E14821F3D578A00CD2D03 /* Personal */,
@@ -373,6 +376,38 @@
 			isa = PBXGroup;
 			children = (
 				D657BCF21F3D881700F49FFC /* PersonalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D68220E41F5E5080006B918F /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D68220E71F5E50A8006B918F /* Controller */,
+				D68220E61F5E509E006B918F /* View */,
+				D68220E51F5E5097006B918F /* Model */,
+			);
+			path = TestFiles;
+			sourceTree = "<group>";
+		};
+		D68220E51F5E5097006B918F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D68220E61F5E509E006B918F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D68220E71F5E50A8006B918F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D68220E81F5E50CA006B918F /* EditingTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -551,6 +586,7 @@
 				D669428E1F3D5A23002E1699 /* HomeViewController.swift in Sources */,
 				D6FFC6E11F3DFB7B00F912B6 /* KeyboardDismissingView.swift in Sources */,
 				D6FBEB4D1F41E9CD00EF9A06 /* TakeStockViewController.swift in Sources */,
+				D68220E91F5E50CA006B918F /* EditingTableViewController.swift in Sources */,
 				D6C47E041F42CF1E005817E9 /* NewTakeStockViewController.swift in Sources */,
 				D6C337EC1F3DA6E3008210B4 /* LoginView.swift in Sources */,
 				D6FBEB411F4159AA00EF9A06 /* PersonHeaderView.swift in Sources */,
