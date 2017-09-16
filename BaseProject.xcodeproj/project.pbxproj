@@ -49,6 +49,7 @@
 		D6607B961F4449CC001F88D8 /* TakeStockDetailTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6607B951F4449CC001F88D8 /* TakeStockDetailTableSectionView.swift */; };
 		D669428C1F3D59FB002E1699 /* Resource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D669428B1F3D59FB002E1699 /* Resource.xcassets */; };
 		D669428E1F3D5A23002E1699 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669428D1F3D5A23002E1699 /* HomeViewController.swift */; };
+		D68220E91F5E50CA006B918F /* EditingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68220E81F5E50CA006B918F /* EditingTableViewController.swift */; };
 		D68E76C01F3FF41D00358AE9 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68E76BF1F3FF41D00358AE9 /* BannerView.swift */; };
 		D6C337EA1F3DA6A7008210B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C337E91F3DA6A7008210B4 /* LoginViewController.swift */; };
 		D6C337EC1F3DA6E3008210B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C337EB1F3DA6E3008210B4 /* LoginView.swift */; };
@@ -60,6 +61,8 @@
 		D6C47E021F42CF02005817E9 /* HadTakedStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */; };
 		D6C47E041F42CF1E005817E9 /* NewTakeStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */; };
 		D6C47E061F42D793005817E9 /* TakeStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */; };
+		D6CE108B1F6D6077004815FB /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6CE108A1F6D6077004815FB /* SwiftScanner.framework */; };
+		D6CE108C1F6D6077004815FB /* SwiftScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D6CE108A1F6D6077004815FB /* SwiftScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D6D667BB1F412CB5005E229B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D667BA1F412CB5005E229B /* HomeTableViewCell.swift */; };
 		D6FBEB411F4159AA00EF9A06 /* PersonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBEB401F4159AA00EF9A06 /* PersonHeaderView.swift */; };
 		D6FBEB431F41D26F00EF9A06 /* PersonalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBEB421F41D26F00EF9A06 /* PersonalModel.swift */; };
@@ -91,6 +94,7 @@
 				D6FFC6E41F3E1B0900F912B6 /* PKHUD.framework in Embed Frameworks */,
 				D6C47E001F42966C005817E9 /* BetterSegmentedControl.framework in Embed Frameworks */,
 				D61E14641F3D54CE00CD2D03 /* SnapKit.framework in Embed Frameworks */,
+				D6CE108C1F6D6077004815FB /* SwiftScanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +136,7 @@
 		D6607B951F4449CC001F88D8 /* TakeStockDetailTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeStockDetailTableSectionView.swift; sourceTree = "<group>"; };
 		D669428B1F3D59FB002E1699 /* Resource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resource.xcassets; sourceTree = "<group>"; };
 		D669428D1F3D5A23002E1699 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D68220E81F5E50CA006B918F /* EditingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingTableViewController.swift; sourceTree = "<group>"; };
 		D68E76BF1F3FF41D00358AE9 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		D6C337E91F3DA6A7008210B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6C337EB1F3DA6E3008210B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 		D6C47E011F42CF02005817E9 /* HadTakedStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HadTakedStockViewController.swift; sourceTree = "<group>"; };
 		D6C47E031F42CF1E005817E9 /* NewTakeStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTakeStockViewController.swift; sourceTree = "<group>"; };
 		D6C47E051F42D793005817E9 /* TakeStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeStockTableViewCell.swift; sourceTree = "<group>"; };
+		D6CE108A1F6D6077004815FB /* SwiftScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftScanner.framework; path = Carthage/Build/iOS/SwiftScanner.framework; sourceTree = "<group>"; };
 		D6D667BA1F412CB5005E229B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D6FBEB401F4159AA00EF9A06 /* PersonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHeaderView.swift; sourceTree = "<group>"; };
 		D6FBEB421F41D26F00EF9A06 /* PersonalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalModel.swift; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 				D61E14511F3D542E00CD2D03 /* ARKit.framework in Frameworks */,
 				D61E14631F3D54CE00CD2D03 /* SnapKit.framework in Frameworks */,
 				D61E14691F3D54CE00CD2D03 /* Kingfisher.framework in Frameworks */,
+				D6CE108B1F6D6077004815FB /* SwiftScanner.framework in Frameworks */,
 				D61E14651F3D54CE00CD2D03 /* Alamofire.framework in Frameworks */,
 				D61E14671F3D54CE00CD2D03 /* MJRefresh.framework in Frameworks */,
 				D61E14611F3D54CE00CD2D03 /* AlamofireObjectMapper.framework in Frameworks */,
@@ -208,6 +215,7 @@
 		D61E144F1F3D542D00CD2D03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6CE108A1F6D6077004815FB /* SwiftScanner.framework */,
 				D6C47DFE1F42966C005817E9 /* BetterSegmentedControl.framework */,
 				D63632BC1F3EE50700BC1478 /* FSPagerView.framework */,
 				D6FFC6E21F3E1B0900F912B6 /* PKHUD.framework */,
@@ -244,6 +252,7 @@
 		D61E146F1F3D561A00CD2D03 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				D68220E41F5E5080006B918F /* TestFiles */,
 				D6FBEB481F41E99A00EF9A06 /* TakeStock */,
 				D6C337E51F3DA684008210B4 /* Login */,
 				D61E14821F3D578A00CD2D03 /* Personal */,
@@ -373,6 +382,38 @@
 			isa = PBXGroup;
 			children = (
 				D657BCF21F3D881700F49FFC /* PersonalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D68220E41F5E5080006B918F /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D68220E71F5E50A8006B918F /* Controller */,
+				D68220E61F5E509E006B918F /* View */,
+				D68220E51F5E5097006B918F /* Model */,
+			);
+			path = TestFiles;
+			sourceTree = "<group>";
+		};
+		D68220E51F5E5097006B918F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D68220E61F5E509E006B918F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D68220E71F5E50A8006B918F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D68220E81F5E50CA006B918F /* EditingTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -551,6 +592,7 @@
 				D669428E1F3D5A23002E1699 /* HomeViewController.swift in Sources */,
 				D6FFC6E11F3DFB7B00F912B6 /* KeyboardDismissingView.swift in Sources */,
 				D6FBEB4D1F41E9CD00EF9A06 /* TakeStockViewController.swift in Sources */,
+				D68220E91F5E50CA006B918F /* EditingTableViewController.swift in Sources */,
 				D6C47E041F42CF1E005817E9 /* NewTakeStockViewController.swift in Sources */,
 				D6C337EC1F3DA6E3008210B4 /* LoginView.swift in Sources */,
 				D6FBEB411F4159AA00EF9A06 /* PersonHeaderView.swift in Sources */,

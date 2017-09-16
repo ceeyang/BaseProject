@@ -76,7 +76,8 @@ extension HomeViewController {
 
 extension HomeViewController {
     func HomeTabelViewCell_MoreButtonAction() {
-        HUD.flash(.label("功能还在开发中"), delay: 1.5)
+//        HUD.flash(.label("功能还在开发中"), delay: 1.5)
+        navigationController?.pushViewController(EditingTableViewController(), animated: true)
     }
     
     func HomeTableViewCell_TakeStockButtonAction() {

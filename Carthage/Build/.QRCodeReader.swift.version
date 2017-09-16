@@ -2,7 +2,7 @@
   "commitish" : "7.5.1",
   "iOS" : [
     {
-      "hash" : "f0eb8b414e66a0bb82ce5f9b0c5b9aca6a08b428fb9bda1109c185286f812b6f",
+      "hash" : "91808a409a25b67dc761b5201f4b14ec65bf2b147382f63e51d6c694d9985a8d",
       "name" : "QRCodeReader"
     }
   ]
